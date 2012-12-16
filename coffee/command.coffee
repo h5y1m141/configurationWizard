@@ -51,8 +51,6 @@ class Command
     @items.label.text = @menuList[selectedNumber].description
     @items.backBtn.className = @menuList[selectedNumber].backCommand
     @items.nextBtn.className = @menuList[selectedNumber].nextCommand
-    # @items.backBtn.title = @menuList[selectedNumber].back
-    # @items.nextBtn.title = @menuList[selectedNumber].next
     @items.backBtn.title = "前に戻る"
     @items.nextBtn.title = "次に進む"
 
