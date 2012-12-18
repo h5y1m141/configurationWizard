@@ -12,20 +12,38 @@ class screen
       top:50
       left:5
       
-    @backBtn = Ti.UI.createButton
-      width:150
+
+    @startPointBtn = Ti.UI.createButton
+      width:50
       height:30
       top:50
       left:10
       color:"#222"
 
-      
-    @nextBtn = Ti.UI.createButton
-      width:150
+    @backBtn = Ti.UI.createButton
+      width:50
       height:30
       top:50
-      left:165
+      left:60
       color:"#222"
+      
+    @nextBtn = Ti.UI.createButton
+      width:50
+      height:30
+      top:50
+      left:110
+      color:"#222"
+
+            
+
+    @endPointBtn = Ti.UI.createButton
+      width:50
+      height:30
+      top:50
+      left:160
+      color:"#222"
+
+      
       
     @currentView = Ti.UI.createView
       width:300
@@ -37,7 +55,7 @@ class screen
       borderRadius:10
       
     
-    @nextShowView =    
+    @nextView = Ti.UI.createView
       width:300
       height:300
       backgroundColor:"#ccc"
@@ -46,6 +64,18 @@ class screen
       zIndex:2
       visible:false
       borderRadius:5
+
+    @nextViewlabel = Ti.UI.createLabel
+      textAlign:1
+      color:"#222"
+      width:300
+      font: 
+        fontFamily:'Helvetica Neue'
+        fontSize:14
+        fontWeight:'bold'
+      height:80
+      top:50
+      left:5
 
         
   editItems:(obj) ->
